@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/korisnici">Evidencija Korisnika</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/radnici">Radnici <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Automobili</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/musterije">Musterije</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="http://127.0.0.1:5000/login" class="btn btn-primary">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+      </form>
+    </div>
+  </nav>
+  <h1>Marke automobila sa kojima radimo</h1>
+      
+  <table class="table caption-top">
+    <caption></caption>
+    <thead>
+      <tr>
+        <th scope="col">Lista marki</th>
+        <th scope="col">Logo</th>
+        <th scope="col">Model</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><img src="/static/images/bmw.jpg" class="img-thumbnail" alt="..."height="100px" width="130px"></td>
+        <td>Q3 <br> X1<br> X5</td>
+        
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td><img src="/static/images/mercedes.jpg" class="img-thumbnail" alt="..."height="100px" width="130px"></td>
+        <td>Benz<br>S-klasa<br>A-klasa </td>
+        
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td><img src="/static/images/chev.png" class="img-thumbnail" alt="..." height="150px" width="150px"></td>
+        <td>SUV<br>AVEO<br>SPARK</td>
+        
+      </tr>
+
+
+      <tr>
+
+        <th scope="row">4</th>
+        <td><img src="/static/images/fica.png" class="img-thumbnail" alt="..." height="150px" width="150px"></td>
+        <td>Tipo <br> 500l<br>500x</td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+
+
+{% endblock %}
